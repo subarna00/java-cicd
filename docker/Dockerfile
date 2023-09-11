@@ -2,9 +2,9 @@ FROM openjdk:8u151-jdk-alpine3.7
 
 EXPOSE 9070
 
-ENV APP_HOME=/opt/apache-tomcat-9.0.65/webapps
+ENV APP_HOME=/usr/src/app
 
-copy target/demo.jar ${APP_HOME}/app.jar
+copy target/demo-3.1.3.jar ${APP_HOME}/app.jar
 
 WORKDIR APP_HOME
 
