@@ -4,7 +4,7 @@ EXPOSE 8070
 
 ENV APP_HOME=/usr/src/app
 
-COPY target/demo-3.1.3.jar ${APP_HOME}/app.jar
+COPY target/demo-0.0.1-SNAPSHOT.jar ${APP_HOME}/app.jar
 
 WORKDIR $APP_HOME
 
